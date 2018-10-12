@@ -7,6 +7,9 @@ import submitAction from './src/submit-action';
  * Initialise express
  */
 let app = express();
+var bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({ extended: true }));
+app.set('view engine', 'ejs');
 
 /**
  * Serve dist assets statically
