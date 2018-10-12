@@ -1,7 +1,7 @@
 /**
  * This module will grab the HCard SPA and render it.
  *
- * It exports a single string, with the HTML output.
+ * It exports a single string as an ES6 module, with the HTML output.
  * This can then be rendered by anything you like, such as express, which wont have to worry about any of the construction code in here.
  * it can simply render the string its given
  */
