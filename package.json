@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc -p ./",
     "watch": "tsc -p ./ -w",
-    "serve": "node serve.js"
+    "serve": "nodemon serve.js"
   },
   "author": "",
   "license": "GPL-3.0",
@@ -16,6 +16,7 @@
     "@types/react-dom": "*",
     "bootstrap": "^4.1.3",
     "express": "^4.16.4",
+    "nodemon": "^1.18.4",
     "react": "^15.5.2",
     "react-dom": "^15.5.2",
     "react-html-document": "^3.1.0"
