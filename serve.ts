@@ -15,7 +15,8 @@ let app = express();
 app.use(express.static('dist'));
 
 /**
- *
+ * Define routes and handlers.
+ * All handlers except simple one liners should be abstracted away into modules to allow for proper unit testing and mocking
  */
 app.get('/', (request: Request, response: Response) => response.send(html));
 app.post('/submit', submitAction);
