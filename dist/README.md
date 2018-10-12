@@ -32,6 +32,7 @@ Build a node server which;
 * Saves user inputed data to the server as they switch between form fields
 * Saves completed form data on user submission
 * On page reload, populates the form fields with the values previous saved
+(Intercept the HTML and enter in the values before rendering)
 * Is stateless, to support auto-scaling
 
 User data should be saved into a store or database

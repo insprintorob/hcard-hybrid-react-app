@@ -45,6 +45,11 @@ export default class HCard {
         return this;
     }
 
+    setSuburb(suburb : string) : HCard {
+        this.suburb = suburb;
+        return this;
+    }
+
     setState(state : string) : HCard {
         this.state = state;
         return this;
