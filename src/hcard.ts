@@ -15,39 +15,48 @@ export default class HCard {
     private postcode : number;
     private country : string;
 
-    setGivenName(givenName : string) : void {
+    setGivenName(givenName : string) : HCard {
         this.givenName = givenName;
+        return this;
     }
 
-    setSurname(surname : string) : void {
+    setSurname(surname : string) : HCard {
         this.surname = surname;
+        return this;
     }
 
-    setEmail(email : string) : void {
+    setEmail(email : string) : HCard {
         this.email = email;
+        return this;
     }
 
-    setPhone(phone : number) : void {
+    setPhone(phone : number) : HCard {
         this.phone = phone;
+        return this;
     }
 
-    setHouseNameOrNumber(houseNameOrNumber : string) : void {
+    setHouseNameOrNumber(houseNameOrNumber : string) : HCard {
         this.houseNameOrNumber = houseNameOrNumber;
+        return this;
     }
 
-    setStreet(street : string) : void {
+    setStreet(street : string) : HCard {
         this.street = street;
+        return this;
     }
 
-    setState(state : string) : void {
+    setState(state : string) : HCard {
         this.state = state;
+        return this;
     }
 
-    setPostcode(postcode : number) : void {
+    setPostcode(postcode : number) : HCard {
         this.postcode = postcode;
+        return this;
     }
 
-    setCountry(country : string) : void {
+    setCountry(country : string) : HCard {
         this.country = country;
+        return this;
     }
 }
