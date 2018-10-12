@@ -9,6 +9,6 @@ import { Request, Response } from "express";
  * @param request
  * @param response
  */
-export default function submitAction(request: Request, response: Response) {
+export default function submitAction(request: Request, response: Response) : void {
     response.redirect('/');
 }
