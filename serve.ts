@@ -1,7 +1,6 @@
 import * as express from 'express';
 import html from './src/html';
 import { Request, Response } from 'express';
-import saveHCard from './src/save-hcard';
 import submitAction from './src/submit-action';
 
 /**
