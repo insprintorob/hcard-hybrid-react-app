@@ -1,3 +1,10 @@
+/**
+ * This module will grab the HCard SPA and render it.
+ *
+ * It exports a single string, with the HTML output.
+ * This can then be rendered by anything you like, such as express, which wont have to worry about any of the construction code in here.
+ * it can simply render the string its given
+ */
 import * as React from 'react';
 import * as ReactDOMServer from 'react-dom/server';
 import HTMLDocument from 'react-html-document';

@@ -8,5 +8,6 @@ let app = express();
 
 app.use(express.static('dist'));
 app.get('/', (request: Request, response: Response) => response.send(html));
+app.post('/submit', )
 
 app.listen(8080);
