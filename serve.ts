@@ -1,5 +1,4 @@
 import * as express from 'express';
-import { Request, Response } from 'express';
 import submitAction from './src/submit-action';
 import indexAction from './src/index-action';
 
