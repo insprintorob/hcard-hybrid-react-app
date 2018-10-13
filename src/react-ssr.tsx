@@ -17,6 +17,7 @@ var HCardComponent = require('../dist/main.js').default;
 
 export default async function getHTML() : Promise<string> {
     const state = await recentHCardRepository.findOne({});
+    state.houseNumber = state.houseNameOrNumber;
 
     var doc = (
         <HTMLDocument
