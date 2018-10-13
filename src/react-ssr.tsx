@@ -9,7 +9,6 @@ import * as React from 'react';
 import * as ReactDOMServer from 'react-dom/server';
 import HTMLDocument from 'react-html-document';
 import recentHCardRepository from './recent-hcard-repository';
-import HCard from './hcard';
 
 // Set up the naughty global
 global['React'] = React;
