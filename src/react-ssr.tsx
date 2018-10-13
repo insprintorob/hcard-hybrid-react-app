@@ -20,11 +20,11 @@ export default async function getHTML() : Promise<string> {
 
     var doc = (
         <HTMLDocument
-        title="hCard SSR app"
-        stylesheets={['css/bootstrap.min.css', 'css/main.css']}
-        universalState={state}
-        {...state}
-    >
+            title="hCard SSR app"
+            stylesheets={['css/bootstrap.min.css', 'css/main.css']}
+            universalState={state}
+            {...state}
+        >
         <HCardComponent {...state}/>
         </HTMLDocument>
     );
