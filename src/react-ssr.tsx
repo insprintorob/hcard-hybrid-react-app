@@ -22,8 +22,6 @@ export default async function getHTML() : Promise<string> {
         <HTMLDocument
             title="hCard SSR app"
             stylesheets={['css/bootstrap.min.css', 'css/main.css']}
-            universalState={state}
-            {...state}
         >
         <HCardComponent {...state}/>
         </HTMLDocument>
