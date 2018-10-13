@@ -22,8 +22,9 @@ export default async function getHTML() : Promise<string> {
         <HTMLDocument
             title="hCard SSR app"
             stylesheets={['css/bootstrap.min.css', 'css/main.css']}
+            scripts={['redirect-spa.js']}
         >
-        <HCardComponent {...state}/>
+            <HCardComponent {...state}/>
         </HTMLDocument>
     );
 
