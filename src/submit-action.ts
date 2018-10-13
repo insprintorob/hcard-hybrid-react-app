@@ -42,7 +42,7 @@ export default function submitAction(request: Request, response: Response) : voi
     }
 
     // Sanitize all data for security
-    body.postcode = parseInt(body.postcode);
+    body.postcode = sanitize(body.postcode);
     body.phone = sanitize(body.phone);
     body.givenName = sanitize(body.givenName);
     body.surname = sanitize(body.surname);

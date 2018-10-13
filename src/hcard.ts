@@ -7,12 +7,12 @@ export default class HCard {
     private givenName : string;
     private surname : string;
     private email : string;
-    private phone : number;
+    private phone : string;
     private houseNameOrNumber : string;
     private street : string;
     private suburb : string;
     private state : string;
-    private postcode : number;
+    private postcode : string;
     private country : string;
     private created : number; // In Unix time
 
@@ -31,7 +31,7 @@ export default class HCard {
         return this;
     }
 
-    setPhone(phone : number) : HCard {
+    setPhone(phone : string) : HCard {
         this.phone = phone;
         return this;
     }
@@ -56,7 +56,7 @@ export default class HCard {
         return this;
     }
 
-    setPostcode(postcode : number) : HCard {
+    setPostcode(postcode : string) : HCard {
         this.postcode = postcode;
         return this;
     }
