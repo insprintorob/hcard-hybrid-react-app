@@ -14,6 +14,7 @@ export default class HCard {
     private state : string;
     private postcode : number;
     private country : string;
+    private created : number; // In Unix time
 
     setGivenName(givenName : string) : HCard {
         this.givenName = givenName;
@@ -62,6 +63,11 @@ export default class HCard {
 
     setCountry(country : string) : HCard {
         this.country = country;
+        return this;
+    }
+
+    setCreated(created : number) : HCard {
+        this.created = created;
         return this;
     }
 }

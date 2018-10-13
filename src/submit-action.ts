@@ -69,7 +69,13 @@ export default function submitAction(request: Request, response: Response) : voi
         .setCountry(body.country);
 
     // Pass it off to saveHcard, which will handle the database operations
-    saveHCard(hCard);
-
-    response.redirect('/');
+    saveHCard(hCard).then(() => {
+        response.redirect('/');
+    }).catch((error : Error) => {
+        response.status(500);
+        response.render('error.ejs', {
+            code : 500,
+            message : JSON.stringify(error)
+        });
+    });
 }
