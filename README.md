@@ -40,4 +40,4 @@ Otherwise you'll see the SSR version of the app.
 
 Running the tests
 ----
-The unit tests are run using jade. To run them run `npm run test`
+The unit tests are run using jest. To run them run `npm run test`
