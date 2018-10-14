@@ -36,4 +36,6 @@ app.get('/', indexAction);
 app.post('/submit', submitAction);
 app.post('/update', updateAction); // Lets plug an async function into express, because why not?
 
-app.listen(config.server.port);
+app.listen(config.server.port, () => {
+  console.log('HCard builder Hybrid SSR/SPA app listening on port ' + config.server.port);
+});
