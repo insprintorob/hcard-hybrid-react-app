@@ -9,11 +9,13 @@ import recentHCardRepository from "./recent-hcard-repository";
  *
  * @param hCard
  */
-export default async function saveHCard(hCard : HCard) {
+export default async function saveHCard(hCard : HCard) : Promise<void> {
     // Store in the main HCards collection
     await hCardRepository.addOne(hCard);
 
     // Purge previous latest card and add this card as the latest
     await recentHCardRepository.deleteAll();
     await recentHCardRepository.addOne(hCard);
+    
+    return Promise.resolve();
 }
