@@ -23,21 +23,16 @@
     "express": "^4.16.4",
     "mongo-container": "^0.1.0",
     "mongo-sanitize": "^1.0.0",
-    "nodemon": "^1.18.4",
     "react": "^15.5.2",
     "react-dom": "^15.5.2",
     "react-html-document": "^3.1.0",
-    "sinon-chai": "^3.2.0",
-    "sinon-express-mock": "^2.0.5",
-    "ts-mockito": "^2.3.1",
     "uniqid": "^5.0.3",
     "validator": "^10.8.0"
   },
   "devDependencies": {
     "@types/jest": "^23.3.5",
     "jest": "^23.6.0",
-    "sinon": "^6.3.5",
-    "ts-jest": "^23.10.4",
-    "typescript": "^3.1.3"
+    "typescript": "^3.1.3",
+    "nodemon": "^1.18.4"
   }
 }
