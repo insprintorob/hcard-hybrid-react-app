@@ -6,7 +6,8 @@
   "scripts": {
     "build": "tsc -p ./",
     "watch": "tsc -p ./ -w",
-    "serve": "nodemon serve.js"
+    "serve": "nodemon serve.js",
+    "test": "jest"
   },
   "author": "",
   "license": "GPL-3.0",
