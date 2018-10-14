@@ -2,7 +2,7 @@
   "name": "domain-coding-challenge",
   "version": "0.0.1",
   "description": "HCard App with SSR",
-  "main": "index.js",
+  "main": "serve.js",
   "scripts": {
     "build": "tsc -p ./",
     "watch": "tsc -p ./ -w",
