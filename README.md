@@ -2,7 +2,7 @@ Hybrid HCard React application
 
 Language: TypeScript. Most of it is 95% ES2018 JavaScript, apart from the type declarations.
 Frameworks: React, Express
-Databases: MongoDB, using my own `mongo-container` npm package
+Databases: MongoDB, using my own `mongo-container` (https://github.com/insprintorob/mongo-container) npm package
 
 Features
 ----
