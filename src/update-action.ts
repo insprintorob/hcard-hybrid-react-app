@@ -18,7 +18,7 @@ export default async function updateAction(request : Request | any, response : R
     // Tip: Did you know using let in a for loop forces the JavaScript interpereter to redeclare the variable for every iteration? Use var to avoid this
     for (var attribute in request.body) {
         let value : string = request.body[attribute];
-        request.session[attribute] = value;
+        request.session[attribute] = sanitize(value);
     }
 
     let sessionToSave = {
