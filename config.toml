@@ -3,3 +3,6 @@ environment = "production"
 [database]
 name = "hcard-app"
 uri = "mongodb://127.0.0.1:27017" # Enter in the URI of your actual production database here
+
+[server]
+port = 80

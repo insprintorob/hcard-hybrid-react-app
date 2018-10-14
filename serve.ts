@@ -3,6 +3,7 @@ import * as cookieSession from 'cookie-session';
 import submitAction from './src/submit-action';
 import indexAction from './src/index-action';
 import updateAction from './src/update-action';
+import config from './config';
 
 /**
  * Initialise express
@@ -35,4 +36,4 @@ app.get('/', indexAction);
 app.post('/submit', submitAction);
 app.post('/update', updateAction); // Lets plug an async function into express, because why not?
 
-app.listen(8080);
+app.listen(config.server.port);
