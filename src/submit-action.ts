@@ -22,7 +22,7 @@ const sanitize = require('mongo-sanitize');
  * @param request
  * @param response
  */
-export default function submitAction(request: Request, response: Response) : void {
+export default function submitAction(request: Request | any, response: Response | any) : void {
     let body = request.body;
 
     // Do some basic validation, or return HTTP Code 422 (Unprocessable Entity) and render an error page with a "Try Again" link if the passed in data is invalid
@@ -42,7 +42,6 @@ export default function submitAction(request: Request, response: Response) : voi
     }
 
     // Sanitize all data for security
-    body.postcode = sanitize(body.postcode);
     body.phone = sanitize(body.phone);
     body.givenName = sanitize(body.givenName);
     body.surname = sanitize(body.surname);
