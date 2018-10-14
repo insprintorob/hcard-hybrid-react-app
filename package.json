@@ -19,6 +19,7 @@
     "bootstrap": "^4.1.3",
     "chai": "^4.2.0",
     "cookie-session": "^2.0.0-beta.3",
+    "deepmerge": "^2.2.1",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
     "mongo-container": "^0.1.0",
@@ -26,6 +27,7 @@
     "react": "^15.5.2",
     "react-dom": "^15.5.2",
     "react-html-document": "^3.1.0",
+    "toml": "^2.3.3",
     "uniqid": "^5.0.3",
     "validator": "^10.8.0"
   },

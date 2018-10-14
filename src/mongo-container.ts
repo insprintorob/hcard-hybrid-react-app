@@ -1,4 +1,5 @@
 import { MongoContainer } from 'mongo-container';
+import config from '../config';
 
 /**
  * In a production app I would configure this in a TOML config file
@@ -7,8 +8,8 @@ import { MongoContainer } from 'mongo-container';
 const mongoContainer = new MongoContainer(
     {
         database : {
-            uri : 'mongodb://127.0.0.1:27017',
-            name : 'hcard-app'
+            uri : config.database.uri,
+            name : config.database.name
         }
     }
 );
