@@ -13,16 +13,15 @@ Features
 
 Architectures and design patterns
 ----
-Service oriented architecture
-Single purpose
-Functional programming
-SOLID
+- Service oriented architecture
+- Single purpose design
+- Functional programming
+- SOLID
 
 Prerequisites
 ----
-Make sure you have a local mongodb server running at 127.0.0.1 port 27017. This is the only non node dependency.
-You'll need to install the following globally to build the code and run the built in webserver
-`npm install -g typescript nodemon`
+- Make sure you have a local mongodb server running at 127.0.0.1 port 27017. This is the only non node dependency.
+- You'll need to install the following globally to build the code and run the built in webserver: `npm install -g typescript nodemon`
 
 Installation
 ----
