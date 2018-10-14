@@ -41,6 +41,8 @@ export default function submitAction(request: Request | any, response: Response 
         response.render('error.ejs', validationError);
     }
 
+    // I'm aware I could get this data from the session and even use the mongodb backup of the sesssion if it was corrupted.
+    // However, I prefer to use the data in the post body for simplicity
     // Sanitize all data for security
     body.phone = sanitize(body.phone);
     body.givenName = sanitize(body.givenName);

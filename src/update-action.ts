@@ -2,6 +2,7 @@ import { Request, Response } from 'express';
 import sessionRepository from './session-repository';
 
 const sanitize = require('mongo-sanitize');
+const uniqId = require('uniqid');
 
 /**
  * Handle posts to /update and store user data in the session and write the session to mongodb as a backup
@@ -10,12 +11,14 @@ const sanitize = require('mongo-sanitize');
  * @param response
  */
 export default async function updateAction(request : Request | any, response : Response | any) {
-    const sessionId = request.session._ctx._val;
+    // Generate a unique session Id for this form, or use the existing one
+    const sessionId = request.session.sessionId || uniqId();
+    request.session.sessionId = sessionId;
 
     // Tip: Did you know using let in a for loop forces the JavaScript interpereter to redeclare the variable for every iteration? Use var to avoid this
     for (var attribute in request.body) {
         let value : string = request.body[attribute];
-        request.session[attribute] = sanitize(value);
+        request.session[attribute] = value;
     }
 
     let sessionToSave = {
