@@ -17,6 +17,7 @@ Architectures and design patterns
 - Single purpose design
 - Functional programming
 - SOLID
+- TDD
 
 Prerequisites
 ----
