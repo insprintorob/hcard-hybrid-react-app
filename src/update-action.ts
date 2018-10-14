@@ -33,17 +33,23 @@ export default async function updateAction(request : Request | any, response : R
     /**
      * Because this particular database access has to do with request handling and the session, its perfectly fine to access the database repository directly from here
      */
-
-    let collection = await sessionRepository.getCollection();
-    collection.update(
-        {
-            sessionId : sessionId
-        },
-        sessionToSave,
-        {
-            upsert : true
-        }
-    );
+    try {
+        let collection = await sessionRepository.getCollection();
+        collection.update(
+            {
+                sessionId : sessionId
+            },
+            sessionToSave,
+            {
+                upsert : true
+            }
+        );
+    } catch (error) {
+        response.json({
+            success : false,
+            error: JSON.stringify(error)
+        });
+    }
 
     response.json({
         success : true
