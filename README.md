@@ -35,8 +35,7 @@ Once this finishes, run
 Then start the built in webserver by running
 `npm run serve`
 
-Go to http://localhost:8080 in chrome
-If you have JavaScript enabled in chrome you'll be redirected to the SPA app at http://localhost:8080/spa.html
+Go to http://localhost:8080 in chrome. If you have JavaScript enabled in chrome you'll be redirected to the SPA app at http://localhost:8080/spa.html
 Otherwise you'll see the SSR version of the app.
 
 Running the tests
