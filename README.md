@@ -4,6 +4,8 @@ Language: TypeScript. Most of it is 95% ES2018 JavaScript, apart from the type d
 Frameworks: React, Express
 Databases: MongoDB, using my own `mongo-container` (https://github.com/insprintorob/mongo-container) npm package
 
+Time taken to build: 6-7 hours
+
 Features
 ----
 - Hot reload support for the server. Changes made to the codebase will automatically be made available to the browser.
