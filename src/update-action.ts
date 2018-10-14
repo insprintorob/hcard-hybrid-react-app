@@ -12,9 +12,9 @@ const uniqId = require('uniqid');
  */
 export default async function updateAction(request : Request | any, response : Response | any) {
     // Generate a unique session Id for this form, or use the existing one
+    request.session = request.session || {}; //for unit tests/other environments where the session object may exist (were saving to the database anyway)
     const sessionId = request.session.sessionId || uniqId();
     request.session.sessionId = sessionId;
-
     // Tip: Did you know using let in a for loop forces the JavaScript interpereter to redeclare the variable for every iteration? Use var to avoid this
     for (var attribute in request.body) {
         let value : string = request.body[attribute];
